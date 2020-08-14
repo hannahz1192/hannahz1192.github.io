@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Codeforces Round #662 (Div. 2) | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Rating &#x3D; 1348 (-81) pupil自闭场 只过了A A找规律 wa了一次 1234567891011#include&lt;iostream&gt;using namespace std;int main()&amp;#123;    int T;    cin &gt;&gt; T;    while(T--)&amp;#123;        int n;        cin &gt;&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round #662 (Div. 2)">
+<meta property="og:url" content="http://yoursite.com/2020/08/09/Codeforces-Round-662-Div-2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Rating &#x3D; 1348 (-81) pupil自闭场 只过了A A找规律 wa了一次 1234567891011#include&lt;iostream&gt;using namespace std;int main()&amp;#123;    int T;    cin &gt;&gt; T;    while(T--)&amp;#123;        int n;        cin &gt;&amp;gt">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-09T01:19:08.000Z">
+<meta property="article:modified_time" content="2020-08-10T01:38:28.703Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Codeforces-Round-662-Div-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/09/Codeforces-Round-662-Div-2/" class="article-date">
+  <time datetime="2020-08-09T01:19:08.000Z" itemprop="datePublished">2020-08-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/codeforces/">codeforces</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Codeforces Round #662 (Div. 2)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Rating = 1348 (-81) pupil<br>自闭场 只过了A</p>
+<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>找规律 wa了一次</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#include&lt;iostream&gt;</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="title">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="keyword">int</span> n;</span><br><span class="line">        cin &gt;&gt; n;</span><br><span class="line">        cout &lt;&lt; n/<span class="number">2</span>+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><p>没看到a的取值条件 甚至试图离散化去做<br>看了dalao的代码 直接用cnt2和cnt4计数就行<br>超级简单</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#include&lt;iostream&gt;</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="title">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100005</span>], n, t, cnt2, cnt4;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin &gt;&gt; t;</span><br><span class="line">        a[t]++;</span><br><span class="line">        <span class="keyword">if</span>(a[t]%<span class="number">2</span>==<span class="number">0</span>) cnt2++;</span><br><span class="line">        <span class="keyword">if</span>(a[t]%<span class="number">4</span>==<span class="number">0</span>) cnt4++;</span><br><span class="line">    &#125;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">while</span>(n--)&#123;</span><br><span class="line">        <span class="keyword">char</span> c;</span><br><span class="line">        cin &gt;&gt; c &gt;&gt; t;</span><br><span class="line">        <span class="keyword">if</span>(c==<span class="string">'+'</span>)&#123;</span><br><span class="line">            a[t]++;</span><br><span class="line">            <span class="keyword">if</span>(a[t]%<span class="number">2</span>==<span class="number">0</span>) cnt2++;</span><br><span class="line">            <span class="keyword">if</span>(a[t]%<span class="number">4</span>==<span class="number">0</span>) cnt4++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(c==<span class="string">'-'</span>)&#123;</span><br><span class="line">            a[t]--;</span><br><span class="line">            <span class="keyword">if</span>(a[t]%<span class="number">2</span>!=<span class="number">0</span>) cnt2--;</span><br><span class="line">            <span class="keyword">if</span>(a[t]%<span class="number">4</span>==<span class="number">3</span>) cnt4--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(cnt4&amp;&amp;cnt2&gt;<span class="number">3</span>) cout &lt;&lt; <span class="string">"yes"</span> &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">else</span> cout &lt;&lt; <span class="string">"no"</span> &lt;&lt; endl;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>公式推错了 差一点点（不<br>一直以为是要用二分 其实并不</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#include&lt;iostream&gt;</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="title">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100005</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="keyword">int</span> n, t;</span><br><span class="line">        memset(a, <span class="number">0</span>, <span class="keyword">sizeof</span>(a));</span><br><span class="line">        cin &gt;&gt; n;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)&#123;</span><br><span class="line">            cin&gt;&gt; t;</span><br><span class="line">            a[t]++;</span><br><span class="line">        &#125;</span><br><span class="line">        sort(a+<span class="number">1</span>, a+n+<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=n; i&gt;=<span class="number">1</span>; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i]==a[n]) cnt++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = (n-cnt)/(a[n]<span class="number">-1</span>)<span class="number">-1</span>;</span><br><span class="line">        cout &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/08/09/Codeforces-Round-662-Div-2/" data-id="ckdsc2cvp0000wqfy9mc1awo1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/14/%E9%97%B2%E8%81%8A%E5%8C%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          闲聊区
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/15/2020-7-9%E9%9B%86%E8%AE%AD/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">2020-7-9集训</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD/">暑假集训</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/">知识点</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/08/14/%E9%97%B2%E8%81%8A%E5%8C%BA/">闲聊区</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/09/Codeforces-Round-662-Div-2/">Codeforces Round #662 (Div. 2)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/15/2020-7-9%E9%9B%86%E8%AE%AD/">2020-7-9集训</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/15/%E6%95%B0%E5%AD%A6/">数学</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/13/codeforces-1380/">codeforces 1380</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
